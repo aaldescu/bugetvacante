@@ -18,8 +18,7 @@
     "idb": "^8.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.0",
-    "vite-plugin-pwa": "^0.21.1"
+    "react-router-dom": "^7.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -31,6 +30,9 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.13.0",
-    "vite": "^6.0.3"
+    "sharp": "^0.33.5",
+    "svgexport": "^0.4.2",
+    "vite": "^6.0.3",
+    "vite-plugin-pwa": "^0.21.1"
   }
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
 import { MantineProvider, AppShell, Burger, Group, Text } from '@mantine/core';
@@ -44,7 +44,7 @@ function App() {
         }
       }}
     >
-      <BrowserRouter>
+      <Router>
         <AppShell
           header={{ height: 60 }}
           navbar={{
@@ -85,10 +85,11 @@ function App() {
               <Route path="/trips/new" element={<NewTripPage />} />
               <Route path="/trips/:tripId" element={<TripDetailsPage />} />
               <Route path="/trips/:tripId/expenses" element={<ExpensePage />} />
+              <Route path="*" element={<TripsPage />} />
             </Routes>
           </AppShell.Main>
         </AppShell>
-      </BrowserRouter>
+      </Router>
     </MantineProvider>
   );
 }
